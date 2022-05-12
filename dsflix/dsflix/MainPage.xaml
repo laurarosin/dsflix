@@ -1,0 +1,67 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="dsflix.MainPage">
+
+
+    <Grid RowSpacing="1" ColumnSpacing="10" Padding="10" BackgroundColor="Black">
+        <Grid.ColumnDefinitions>
+
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+
+        <Image x:Name="logo"
+           Grid.Row="0" Grid.Column="0"
+           Grid.ColumnSpan="2"/>
+
+        <Button Text="Aventura"
+                Grid.Row="3" Grid.Column="1"
+                HorizontalOptions="Fill"
+                VerticalOptions="Center"
+                Style="{ StaticResource ButtonVermelhoMenu }"
+                Clicked="Btn_Open_Aventura"/>
+
+        <Button Text="Comedia"
+                    Grid.Row="1" Grid.Column="0"
+                    HorizontalOptions="Fill"
+                    VerticalOptions="Center"
+                    Style="{ StaticResource ButtonVermelhoMenu }"
+                    Clicked="Btn_Open_Comedia"/>
+
+        <Button Text="Drama"
+                    Grid.Row="1" Grid.Column="1"
+                    HorizontalOptions="Fill"
+                    VerticalOptions="Center"
+                    Style="{ StaticResource ButtonVermelhoMenu }"
+                    />
+
+        <Button Text="Terror"
+                    Grid.Row="2" Grid.Column="0"
+                    HorizontalOptions="Fill"
+                    VerticalOptions="Center"
+                    Style="{ StaticResource ButtonVermelhoMenu }"
+                    />
+        <Button Text="Romance"
+                    Grid.Row="2" Grid.Column="1"
+                    HorizontalOptions="Fill"
+                    VerticalOptions="Center"
+                    Style="{ StaticResource ButtonVermelhoMenu }"
+                    />
+        <Button Text="Ação"
+                    Grid.Row="3" Grid.Column="0"
+                    HorizontalOptions="Fill"
+                    VerticalOptions="Center"
+                    Style="{ StaticResource ButtonVermelhoMenu }"
+                    />
+
+
+
+    </Grid>
+</ContentPage>
